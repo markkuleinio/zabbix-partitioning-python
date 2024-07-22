@@ -145,7 +145,6 @@ def read_config_file() -> None:
     """ Reads the configuration file and populates the Config dataclass.
     """
     config = configparser.ConfigParser(
-        inline_comment_prefixes=("#", ";"),
         interpolation=None,
     )
     try:
